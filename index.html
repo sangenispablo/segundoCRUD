@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+    <h1>(C)reate - (R)ead - (U)pdate - (D)elete</h1>
+    <button onclick="createPaciente()">Create</button>
+    <button>Read</button>
+    <button>Update</button>
+    <button>Delete</button>
+
+    <form onsubmit="manejarSubmit(event)">
+        <input type="text" name="dni" id="dni" placeholder="dni">
+        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        <input type="text" name="apellido" id="apellido" placeholder="apellido">
+        <input type="number" name="edad" id="edad" placeholder="edad">
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="listadoPacientes"></div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
